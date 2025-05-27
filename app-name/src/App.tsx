@@ -2,6 +2,7 @@ import React from 'react';
 // import { useState } from 'react'
 import './App.css'
 import ProductCard from './components/ProductCard/ProductCard'
+import Calculator from './components/Calculator/Calculator'
 
 
 type Product = {
@@ -19,12 +20,13 @@ const product: Product = {
 const handleAddToCart = (product: Product) => {
   console.log("Товар добавлен в корзину:", product);
 };
+
 const App: React.FC = () => {  
   return (
     <>
+        <Calculator />
         <ProductCard product={product} addToCart={handleAddToCart}/>        
     </>      
   )
 }
-
 export default App
