@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css'
 import ProductCard from './components/ProductCard/ProductCard'
 import Calculator from './components/Calculator/Calculator'
+import ProductCategories from './components/ProductCategories/ProductCategories';
 
 
 type Product = {
@@ -24,6 +25,7 @@ const handleAddToCart = (product: Product) => {
 const App: React.FC = () => {  
   return (
     <>
+        <ProductCategories/>
         <Calculator />
         <ProductCard product={product} addToCart={handleAddToCart}/>        
     </>      
