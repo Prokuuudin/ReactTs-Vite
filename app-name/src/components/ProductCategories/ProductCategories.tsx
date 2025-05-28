@@ -45,7 +45,7 @@ const ProductCategories: React.FC = () => {
 
   return (
     <div>
-      <h2>Категории товаров</h2>
+      <h2 style={{ fontSize: '1.5rem', color:"black" }}>Категории товаров</h2>
       <ul>
         {categories.map((category) => (
           <li key={category.slug}>
