@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from './Buttons/Button/Button';
-// import Cards from './Cards/Cards';
-// import Buttons from './Buttons/Buttons';
+import Card from './Card/Card';
 
 const DesignSystem: React.FC = () => {
     return ( 
@@ -10,8 +9,12 @@ const DesignSystem: React.FC = () => {
             <Button.Button1/>
             <Button.Button2/>
             <Button.Button3/>
-            {/* <Cards/> */}
-            {/* <Buttons/>*/}
+            <Card
+                title="Смарт-часы"
+                description="Умные часы с мониторингом здоровья и уведомлениями."
+                imageUrl="https://example.com/smartwatch.jpg"
+                onBuy={() => alert('Товар добавлен в корзину')}
+            />
         </div>
      );
 }

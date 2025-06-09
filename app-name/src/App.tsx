@@ -1,6 +1,6 @@
 import React from 'react';
 // import { useState } from 'react'
-import './App.css'
+ 
 // import ProductCard from './components/ProductCard/ProductCard'
 // import Calculator from './components/Calculator/Calculator'
 // import ProductCategories from './components/ProductCategories/ProductCategories';
