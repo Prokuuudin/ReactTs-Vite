@@ -1,4 +1,4 @@
-.cards{
+.cards {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -6,37 +6,52 @@
     padding: 20px;
     background-color: #e09b9b;
 }
+
+/* Карточка с равной высотой */
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 300px;
+    min-height: 450px; /* Установи минимальную или фиксированную высоту */
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 16px;
-    max-width: 300px;
     text-align: center;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-    margin-bottom: 10px;
 }
 
+/* Картинка */
 .card-image {
     width: 100%;
-    height: auto;
+    height: 180px;
     border-radius: 8px;
     object-fit: cover;
 }
 
+/* Заголовок */
 .card-title {
     font-size: 1.5rem;
     margin: 12px 0 8px;
     color: #333;
 }
 
+/* Описание */
 .card-description {
     font-size: 1rem;
     color: #666;
     margin-bottom: 16px;
 }
 
+/* Цены, если используешь */
+.card-price {
+    margin-bottom: 12px;
+}
+
+/* Кнопка */
 .card-button {
+    margin-top: auto; /* Прижать кнопку книзу */
     background-color: #007bff;
     color: #fff;
     padding: 10px 16px;
